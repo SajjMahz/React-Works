@@ -1,0 +1,41 @@
+@import '../styles/variables.scss';
+
+.fourm {
+  text-align: center;
+}
+
+#name {
+  width: 55%;
+}
+
+#date {
+  width: 25%;
+}
+
+#amount {
+  width: 25%;
+}
+
+#butn {
+  margin: 2px;
+  padding: 7px;
+  cursor: pointer;
+  outline: none;
+  border-radius: $borderRadius;
+  font-size: 1rem;
+  font-family: inherit;
+  background: $primary;
+  color: $dark;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: $primary;
+    background: rgba($primary, 0.1);
+    color: $primary;
+  }
+  &:active {
+    border-color: $primary;
+    background: linear-gradient(rgba($primary, 0.2), rgba($primary, 0.3));
+    color: $primary;
+  }
+}
